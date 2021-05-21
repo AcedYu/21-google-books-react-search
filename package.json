@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "21-google-books-react-search",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "This assignment was assigned by the U.C. Berkeley Extension Full-time Full Stack Flex Boot Camp. This is assignment 21 for the program. In this assignment I was tasked to create a fullstack MERN application using MongoDB and React.",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
