@@ -1,17 +1,11 @@
 import React from "react";
 import API from "../utils/API.js";
 
-const BookEntry = ({title, authors, image, link, description}) => {
-  async function onSave(event) {
-    var body = {
-      authors: authors,
-      description: description,
-      image: image,
-      link: link,
-      title: title
-    }
-    var sendData = await API.saveBook(body);
-    alert("Entry Saved to your Saved List")
+const SaveEntry = ({id, title, authors, image, link, description}) => {
+  async function onDelete(event) {
+    var sendData = await API.deleteBook(id);
+    console.log(sendData);
+    window.location.reload();
   }
 
   return (
@@ -26,7 +20,7 @@ const BookEntry = ({title, authors, image, link, description}) => {
             <p className="card-text">{authors}</p>
             <p className="card-text"><small className="text-muted">{description}</small></p>
             <a className="btn btn-primary" href={link} target="_blank">View</a>
-            <button className="btn btn-danger" onClick={onSave}>Save</button>
+            <button className="btn btn-danger" onClick={onDelete}>Delete</button>
           </div>
         </div>
       </div>
@@ -34,4 +28,4 @@ const BookEntry = ({title, authors, image, link, description}) => {
   );
 }
 
-export default BookEntry;
+export default SaveEntry;

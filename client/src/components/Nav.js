@@ -5,7 +5,7 @@ const Nav = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary text-white">
       <div className="container-fluid">
         <h1>Google Book Search</h1>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-collapse">
           <div className="navbar-nav">
             <a className="nav-link" href="/search">Search</a>
             <a className="nav-link" href="/saved">Saved</a>
