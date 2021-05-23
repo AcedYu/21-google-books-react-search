@@ -6,7 +6,7 @@ It contains notable features such as:
 - A Search feature that returns back data from the google books API
 - A "Save" feature that allows users to save their favorite books from their searches to their own saved list.
 
-![Image](DEMO IMAGE HERE)
+![Image](demo.png)
 
 Due: Thursday, May 27, 2021 11:59 PM
 
