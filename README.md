@@ -69,7 +69,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Deployed Link
 
-* [See Live Site](HEROKU APP SITE HERE)
+* [See Live Site](https://damp-brook-08582.herokuapp.com/)
 
 ## Authors
 AcedYu
