@@ -2,10 +2,12 @@ import React from "react";
 import API from "../utils/API.js";
 
 const SaveEntry = ({id, title, authors, image, link, description}) => {
-  async function onDelete(event) {
-    var sendData = await API.deleteBook(id);
-    console.log(sendData);
-    window.location.reload();
+  function onDelete(event) {
+    API.deleteBook(id)
+      .then(() => {
+        window.location.reload();
+      })
+      .catch(err => console.log(err));
   }
 
   return (

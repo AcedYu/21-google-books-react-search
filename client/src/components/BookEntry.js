@@ -1,8 +1,8 @@
 import React from "react";
 import API from "../utils/API.js";
 
-const BookEntry = ({title, authors, image, link, description}) => {
-  async function onSave(event) {
+const BookEntry = ({ title, authors, image, link, description }) => {
+  function onSave(event) {
     var body = {
       authors: authors,
       description: description,
@@ -10,8 +10,11 @@ const BookEntry = ({title, authors, image, link, description}) => {
       link: link,
       title: title
     }
-    var sendData = await API.saveBook(body);
-    alert("Entry Saved to your Saved List")
+    API.saveBook(body)
+      .then(res => {
+        alert("Entry Saved to your Saved List");
+      })
+      .catch(err => console.log(err));
   }
 
   return (
