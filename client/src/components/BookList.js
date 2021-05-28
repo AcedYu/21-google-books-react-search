@@ -7,15 +7,24 @@ const BookList = ({ books }) => {
       <h1>Search Results</h1>
       <div className="container">
         {
-          books.map(book => (
-            <BookEntry
-            title={book.volumeInfo.title}
-            authors={book.volumeInfo.authors}
-            image={book.volumeInfo.imageLinks.thumbnail}
-            link={book.volumeInfo.previewLink}
-            description={book.volumeInfo.description}
-            />
-          ))
+          books.map(book => {
+            var bookpic;
+            if (!book.volumeInfo.imageLinks) {
+              bookpic = "";
+            } else {
+              bookpic = book.volumeInfo.imageLinks.thumbnail;
+            }
+            return (
+              <BookEntry
+                title={book.volumeInfo.title}
+                authors={book.volumeInfo.authors}
+                image={bookpic}
+                link={book.volumeInfo.previewLink}
+                description={book.volumeInfo.description}
+              />
+            );
+          }
+          )
         }
       </div>
     </div>
