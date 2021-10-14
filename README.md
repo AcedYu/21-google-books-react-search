@@ -1,6 +1,5 @@
 # 21-google-books-react-search
-This assignment was assigned by the U.C. Berkeley Extension Full-time Full Stack Flex Boot Camp.
-This is assignment 21 for the program. In this assignment I was tasked to create a fullstack MERN application using MongoDB and React.
+In this project I created a fullstack MERN application using MongoDB and React.
 
 It contains notable features such as:
 - A Search feature that returns back data from the google books API
@@ -74,4 +73,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Authors
 AcedYu
 - [Link to Github](https://github.com/AcedYu)
-- [Link to LinkedIn](https://www.linkedin.com/in/alex-yu-3712811b9/)
